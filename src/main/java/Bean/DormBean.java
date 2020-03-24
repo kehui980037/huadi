@@ -7,8 +7,8 @@ public class DormBean {
     private int dormNumber;
     private int peopleCount;
 
-    public DormBean() {
-    }
+
+
 
     public DormBean(int id,int buildNumber, int floorNumber, int dormNumber, int peopleCount) {
         this.id = id;
