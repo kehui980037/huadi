@@ -1,12 +1,6 @@
 <%@ page import="Bean.StudentBean" %>
 <%@ page import="java.util.List" %>
-<%@ page import="java.io.IOException" %><%--
-  Created by IntelliJ IDEA.
-  User: binguner
-  Date: 2019-01-11
-  Time: 19:22
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="java.io.IOException" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>

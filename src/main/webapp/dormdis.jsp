@@ -159,7 +159,7 @@
 
 
 
-        <div  align="center" id="div_title" style="margin-top: 100px">
+        <div  align="center" id="div-title" style="margin-top: 100px">
             <h1>宿舍分配</h1>
         </div>
         <div id="div_btn">

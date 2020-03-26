@@ -18,6 +18,10 @@ public class DormBean {
         this.peopleCount = peopleCount;
     }
 
+    public DormBean() {
+
+    }
+
     public int getId() {
         return id;
     }

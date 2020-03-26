@@ -1,11 +1,5 @@
 <%@ page import="java.util.List" %>
-<%@ page import="Bean.GoodsBean" %><%--
-  Created by IntelliJ IDEA.
-  User: binguner
-  Date: 2019-01-13
-  Time: 16:41
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="Bean.GoodsBean" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>

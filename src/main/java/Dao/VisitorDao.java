@@ -161,6 +161,11 @@ public class VisitorDao {
         return true;
     }
 
+    /**
+     * delete visitor by id
+     * @param id
+     * @return
+     */
     public static boolean deleteVisitor(int id){
         String sql = "delete from VisitorTable where id=?";
         try {
