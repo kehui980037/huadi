@@ -40,4 +40,19 @@ public class ManagerDao {
         }
         return false;
     }
+
+    public static boolean saveThisManager(String username, String password){
+        String sql = "insert into ManagerTable(`username`,`password`) values(?,?)";
+        try {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            preparedStatement.setString(1,username);
+            preparedStatement.setString(2,password);
+            preparedStatement.executeUpdate();
+            return true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+//        return false;
+    }
 }

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="layui/css/layui.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="layui/layui.js"></script>
-    <title>公寓管理系统登录界面</title>
+    <title>公寓管理系统注册界面</title>
     <style type="text/css">
         #div{
             width:1200px;
@@ -48,7 +48,7 @@
             xmlHttp.onreadystatechange=function () {
                 if (xmlHttp.readyState==4 && xmlHttp.status == 200){
                     if (xmlHttp.responseText == "1"){
-                        alert("用户名或密码出错，请重试！");
+                        alert("用户名或密码出错，请重试或注册！");
                     }else {
                         window.location.href="/index.jsp";
                     }
@@ -132,6 +132,12 @@
             <div class="layui-input-block">
                 <button onclick="doLogin()" type="button" class="layui-btn" lay-submit lay-filter="formDemo">登陆</button>
                 <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <a href="regist.jsp" name="注册"><h3>注册</h3></a>
             </div>
         </div>
     </form>

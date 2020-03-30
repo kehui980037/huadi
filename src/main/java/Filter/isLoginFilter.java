@@ -31,6 +31,7 @@ public class isLoginFilter implements Filter {
                 response.sendRedirect("/login.jsp");
                 return;
             }
+
         }else {
             //System.out.println("get login session");
             //System.out.println("is login");
