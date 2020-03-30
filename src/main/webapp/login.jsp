@@ -132,12 +132,7 @@
             <div class="layui-input-block">
                 <button onclick="doLogin()" type="button" class="layui-btn" lay-submit lay-filter="formDemo">登陆</button>
                 <button type="reset" class="layui-btn layui-btn-primary">重置</button>
-
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <div class="layui-input-block">
-                <a href="regist.jsp" name="注册"><h3>注册</h3></a>
+                <a href="regist.jsp" name="注册"><button type="button" class="layui-btn" lay-submit lay-filter="formDemo">注册</button></a>
             </div>
         </div>
     </form>

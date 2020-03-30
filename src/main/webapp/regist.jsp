@@ -185,7 +185,7 @@
 
 		<div class="layui-form-item">
 			<div class="layui-input-block">
-				<input type="submit" value="注册" id="sub_btn" />
+				<button type="submit" value="注册" id="sub_btn" class="layui-btn" lay-submit lay-filter="formDemo">注册</button>
 			</div>
 		</div>
 	</form>
