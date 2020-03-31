@@ -2,11 +2,11 @@ package Bean;
 
 public class VisitorBean {
     private int id;
-    private int buildNumber;
-    private String visitorName;
-    private String visitorDate;
-    private String phone;
-    private String reason;
+    private int buildNumber;//楼号
+    private String visitorName;//访客名
+    private String visitorDate;//访问日期
+    private String phone;//电话
+    private String reason;//原因
 
     public VisitorBean() {
     }

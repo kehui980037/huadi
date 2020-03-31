@@ -1,8 +1,8 @@
 package Servlet;
 
-import Bean.ManagerBean;
+
 import Dao.ManagerDao;
-import JDBCUtils.AttrConsts;
+
 
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
@@ -17,8 +17,8 @@ public class RegistServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //System.out.println("session : "+request.getSession().getAttribute(AttrConsts.SESSION_USER));
         request.setCharacterEncoding("UTF-8");
-        String username = request.getParameter("id_username");
-        String password = request.getParameter("id_password");
+        String username = request.getParameter("id_username");//获取输入用户名
+        String password = request.getParameter("id_password");//获取输入密码
         System.out.println(username + " : " + password);
         if (ManagerDao.isExistThisManager(username,password)){
 //                    ManagerBean managerBean1 = new ManagerBean(username,password);
@@ -35,7 +35,7 @@ public class RegistServlet extends HttpServlet {
 //                    //return;
 //                    //response.sendRedirect("/index.jsp");
 //                    response.getWriter().write("123");
-                    //3.1不可用（用户名已存在）
+                    //不可用（用户名已存在）
                     //将错误信息和回显得表单信息保存到Request域中
             request.setAttribute("msg","用户名已存在！");
                     // 跳回注册页面
@@ -49,8 +49,8 @@ public class RegistServlet extends HttpServlet {
 //                    //response.getWriter().print("1");
 //                    response.getWriter().write("1");
 
-            ManagerDao.saveThisManager(username,password);
-            response.sendRedirect( request.getContextPath() + "/login.jsp" );
+            ManagerDao.saveThisManager(username,password);//保存用户名、密码
+            response.sendRedirect( request.getContextPath() + "/login.jsp" );//重定向回登录页面
 //            request.getRequestDispatcher("/login.jsp").forward(request,response);
             return;
                     //System.out.println("response is writing!");

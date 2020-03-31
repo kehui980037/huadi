@@ -22,7 +22,7 @@ public class VisitorDao {
     }
 
     /**
-     * get all visitor
+     * 从数据库中获取所有的访客数据
      * @return all visitor
      */
     public static List<VisitorBean> getAllVisitor() {
@@ -50,7 +50,7 @@ public class VisitorDao {
     }
 
     /**
-     * get visitor list by build Id
+     * 通过楼号查询访客数据
      * @param buildNumber build number
      * @return the list of this build's visitor
      */
@@ -78,7 +78,7 @@ public class VisitorDao {
     }
 
     /**
-     * get visitor list by Date
+     * 通过日期查询访客数据
      * @param date the date
      * @return This day's all visitor information
      */
@@ -106,7 +106,7 @@ public class VisitorDao {
     }
 
     /**
-     * get this build and this day's all visitor list
+     * 通过楼号和日期查询所有的数据
      * @param buildNumber build number
      * @param date date
      * @return this building and this's days all visitor list
@@ -136,7 +136,7 @@ public class VisitorDao {
     }
 
     /**
-     * add a visitor to VisitorTable
+     * 添加访客数据
      * @param buildNumber build number
      * @param visitorName visitor number
      * @param visitorDate visit date
@@ -162,7 +162,7 @@ public class VisitorDao {
     }
 
     /**
-     * delete visitor by id
+     * 通过id删除访客数据
      * @param id
      * @return
      */
